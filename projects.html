@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Riley Hiron's Portfolio | Projects </title>
+</head>
+<body>
+    <nav>
+        <ul class="nav-list">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="skills.html">Skills & Experiance</a>
+            </li>
+            <li class="active">
+                <a href="projects.html">Projects</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Projects</h1>
+        <div id="projects">
+            <div id="project-display">
+                <button class="project-nav" id="prev" onclick="navigate(-1)"><img src="./Images/chevron-top-icon.svg" alt="Previous Project"></button>
+                <div id="project-content">
+                    <img id="project-img" class="img-project" src="path-to-image1.jpg" alt="Project Image">
+                    <div id="tech-icons">
+                        <img src="./Images/python_icon.svg" alt="Python" class="tech-icon">
+                        <img src="./Images/css_icon.svg" alt="CSS" class="tech-icon">
+                        <img src="./Images/html_icon.svg" alt="HTML" class="tech-icon">
+                        <img src="./Images/javascript_icon.svg" alt="JavaScript" class="tech-icon">
+                        <img src="./Images/react_icon.svg" alt="React" class="tech-icon">
+                        <img src="./Images/unity_icon.svg" alt="Unity" class="tech-icon">
+                        <img src="csharp_icon.svg" alt="C#" class="tech-icon">
+                    </div>
+                    <div id="project-desc">Project 1 Description</div>
+                    <div id="project-icons">
+                        <div id="project-selector" onclick="changeProject(0)"></div>
+                        <div id="project-selector" onclick="changeProject(1)"></div>
+                        <div id="project-selector" onclick="changeProject(2)"></div>
+                        <div id="project-selector" onclick="changeProject(3)"></div>
+                    </div>
+                </div>
+                <button class="project-nav" id="next" onclick="navigate(1)"><img src="./Images/chevron-top-icon.svg" alt="Next Project"></button>
+            </div>
+        </div>
+        
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
